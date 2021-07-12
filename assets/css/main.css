@@ -110,6 +110,10 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
+	.projectTitle {
+		margin: ;
+	}
+
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -135,8 +139,9 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	/* project <p> margin */
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -157,7 +162,7 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 		line-height: 1.5em;
 	}
 
@@ -246,6 +251,27 @@ input, select, textarea {
 		text-align: right;
 	}
 
+
+	/* skill menu */
+
+	.fa-html5, .fa-css3 {
+		font-size: 100px;
+		margin: 20px 15px;
+	}
+
+	.fa-html5 {
+		color: #DD4A24;
+	}
+
+	.fa-css3 {
+		color: #0273B7;
+	}
+
+	.fa-html5:hover, .fa-css3:hover{
+		opacity: 0.3;
+		/* 애니메이션 효과주기 */
+	}
+
 /* Container */
 
 	.container {
@@ -302,10 +328,12 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		/* border: 1px solid #1f1815; */
 	}
 
 		.row > * {
 			box-sizing: border-box;
+
 		}
 
 		.row.gtr-uniform > * > :last-child {
@@ -732,7 +760,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: 0;
-					margin-left: -2.5em;
+					margin-left: 0em;
 				}
 
 					.row > * {
@@ -981,7 +1009,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 0 0 0 2em;
+						padding: 0 5em 0 0 2em;
 					}
 
 					.row.gtr-uniform {
@@ -1759,7 +1787,7 @@ input, select, textarea {
 
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 3em;
-						}
+						}		
 
 		}
 
@@ -1802,7 +1830,7 @@ input, select, textarea {
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		margin: 0 0 2.5em 0;
 	}
 
 	label {
@@ -2044,11 +2072,12 @@ input, select, textarea {
 
 	.image {
 		border-radius: 0.35em;
-		border: 0;
+		border: 1px;
 		display: inline-block;
 		position: relative;
 	}
 
+		/* 이미지 위에 흐린 이미지 */
 		.image:before {
 			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
@@ -2060,10 +2089,11 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.1;
 			position: absolute;
 			top: 0;
-			width: 100%;
+			width: 94%;
+			margin-left: 6%;
 		}
 
 		.image.thumb {
@@ -2086,7 +2116,7 @@ input, select, textarea {
 				line-height: 2.25em;
 				margin: -1.25em 0 0 -3em;
 				opacity: 0;
-				padding: 0 1.5em;
+				padding: 0 1.7em;
 				position: absolute;
 				text-align: center;
 				text-decoration: none;
@@ -2128,10 +2158,11 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		/* 프로젝트 가장하단 이미지  */
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			width: 80%;
 		}
 
 			.image.fit img {
@@ -2644,7 +2675,7 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
+			margin: 0 1em 1em 0; 
 			width: 6.25em;
 		}
 
@@ -2687,16 +2718,17 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
+		margin-left: 37%;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
+		padding: 8em 0em 4em 4em;
 		width: calc(100% - 35%);
+		/* border: 1px solid black; */
 	}
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 2em 0 0 0;
 		}
 
 			#main > section:first-child {
